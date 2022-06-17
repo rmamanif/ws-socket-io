@@ -1,6 +1,8 @@
 # ws-socket-io
 
 1. Iniciar servidor (node JS)
+  * npm i -g typescript
+  * npm i -g nodemon
   * tsc -w (Typescript watch)
   * npm i
   * nodemon dist/
