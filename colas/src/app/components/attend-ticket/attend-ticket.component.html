@@ -1,0 +1,9 @@
+<h1>Escritorio {{this.mesa}}</h1>
+<h4>Atendiendo a <small>{{this.cur_ticket}}</small></h4>
+<h4>Tickets Pendientes <small>{{this.ticket_list.length}}</small></h4>
+<hr>
+
+<button class="btn btn-primary btn-lg"
+  (click)="atenderTicket()">
+    Atender siguiente ticket
+</button>

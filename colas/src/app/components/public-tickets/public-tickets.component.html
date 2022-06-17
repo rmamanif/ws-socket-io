@@ -1,0 +1,25 @@
+<table>
+  <tr>
+      <td valign="middle" class="ticket-actual">
+          <span id="lblTicket1" class="ticket-actual-numero">Ticket {{this.latestAttended.id}}</span>
+          <br>
+          <span id="lblEscritorio1" class="ticket-actual-escritorio">Mesa {{this.latestAttended.mesa}}</span>
+          <br>
+          <span id="lblEscritorio1" class="ticket-actual-escritorio">Usuario: {{this.latestAttended.user}}</span>
+      </td>
+      <td>
+          <table>
+              <tr *ngFor="let item of this.latestFour ">
+                  <td>
+                      <span id="lblTicket2" class="ticket-secundario">Ticket {{this.item.id}}</span>
+                      <br>
+                      <span id="lblEscritorio2">Mesa {{this.item.mesa}}</span>
+                      <br>
+                      <span id="lblEscritorio2">Usuario: {{this.item.user}}</span>
+
+                  </td>
+              </tr>
+          </table>
+      </td>
+  </tr>
+</table>

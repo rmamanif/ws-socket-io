@@ -1,0 +1,43 @@
+<h1>Programa de Colas</h1>
+<hr>
+
+<div class="row">
+    <div class="col-6">
+
+        <h4>Opciones</h4>
+        <ul class="list-group">
+            <a class="list-group-item list-group-item-action " (click)="publiclist()">
+                Pantalla publica
+            </a>
+            <a class="list-group-item list-group-item-action " (click)="newticket()">
+              Crear Tickets
+            </a>
+        </ul>
+
+    </div>
+
+    <div class="col-6">
+
+        <h4>Configurar Mesa</h4>
+
+            <form class="p-4" (ngSubmit)="login()">
+              <input name="nombre"
+               type="text"
+               [(ngModel)]="nombre"
+               class="form-control"
+               placeholder="Escritorio"
+               autofocus required>
+               <select name="select_room" [(ngModel)]="selected_room">
+                <option *ngFor="let room of room_list" [value]="room.nombre"  >
+                  {{room.nombre}}
+                </option>
+               </select>
+
+            <br>
+            <button
+            class="btn btn-primary btn-block">
+                Ingresar
+            </button>
+            </form>
+    </div>
+</div>
